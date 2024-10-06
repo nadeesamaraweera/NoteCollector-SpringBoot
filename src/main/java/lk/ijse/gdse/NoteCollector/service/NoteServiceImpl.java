@@ -1,14 +1,15 @@
 package lk.ijse.gdse.NoteCollector.service;
 
-import com.example.noteTaker.customObj.NoteErrorResponse;
-import com.example.noteTaker.customObj.NoteResponse;
-import com.example.noteTaker.dao.NoteDAO;
-import com.example.noteTaker.dto.impl.NoteDTO;
-import com.example.noteTaker.entity.NoteEntity;
-import com.example.noteTaker.exception.DataPersistFailedException;
-import com.example.noteTaker.exception.NoteNotFound;
-import com.example.noteTaker.util.AppUtil;
-import com.example.noteTaker.util.Mapping;
+
+import lk.ijse.gdse.NoteCollector.customObj.NoteErrorResponse;
+import lk.ijse.gdse.NoteCollector.customObj.NoteResponse;
+import lk.ijse.gdse.NoteCollector.dao.NoteDAO;
+import lk.ijse.gdse.NoteCollector.dto.impl.NoteDTO;
+import lk.ijse.gdse.NoteCollector.entity.NoteEntity;
+import lk.ijse.gdse.NoteCollector.exception.DataPersistFailedException;
+import lk.ijse.gdse.NoteCollector.exception.NoteNotFound;
+import lk.ijse.gdse.NoteCollector.util.AppUtil;
+import lk.ijse.gdse.NoteCollector.util.Mapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

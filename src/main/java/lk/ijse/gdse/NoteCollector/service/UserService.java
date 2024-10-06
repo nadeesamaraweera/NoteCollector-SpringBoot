@@ -1,7 +1,9 @@
 package lk.ijse.gdse.NoteCollector.service;
 
-import com.example.noteTaker.customObj.UserResponse;
-import com.example.noteTaker.dto.impl.UserDTO;
+
+
+import lk.ijse.gdse.NoteCollector.customObj.UserResponse;
+import lk.ijse.gdse.NoteCollector.dto.impl.UserDTO;
 
 import java.util.List;
 

@@ -1,9 +1,10 @@
 package lk.ijse.gdse.NoteCollector.util;
 
-import com.example.noteTaker.dto.impl.NoteDTO;
-import com.example.noteTaker.dto.impl.UserDTO;
-import com.example.noteTaker.entity.NoteEntity;
-import com.example.noteTaker.entity.UserEntity;
+
+import lk.ijse.gdse.NoteCollector.dto.impl.NoteDTO;
+import lk.ijse.gdse.NoteCollector.dto.impl.UserDTO;
+import lk.ijse.gdse.NoteCollector.entity.NoteEntity;
+import lk.ijse.gdse.NoteCollector.entity.UserEntity;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
