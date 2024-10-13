@@ -40,8 +40,7 @@ public class JWTConfig  extends OncePerRequestFilter {
         userEmail = jwtService.extractUsername(jwtToken);
 
         //userEmail validation
-        if(StringUtils.isNotEmpty(userEmail) &&
-                SecurityContextHolder.getContext().getAuthentication() == null) {
+        if(StringUtils.isEmpty(userEmail) && SecurityContextHolder.getContext().getAuthentication() == null) {
             //load user details based on the email
             var loadedUser =
                     userService.userDetailsService().loadUserByUsername(userEmail);
