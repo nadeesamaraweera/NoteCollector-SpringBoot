@@ -28,9 +28,7 @@ public class UserController {
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     //consume - clientge peththe
     //produce - server ek visin
-    public ResponseEntity<String>
-
-    saveUser(
+    public ResponseEntity<String> saveUser(
             @RequestPart("firstName") String firstName,
             @RequestPart("lastName") String lastName,
             @RequestPart("email") String email,
