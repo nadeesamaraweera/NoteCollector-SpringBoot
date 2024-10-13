@@ -11,6 +11,9 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
+    String username;
+    String password;
+    String role;
     @Bean
     public SecurityFilterChain SecurityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
@@ -23,9 +26,9 @@ public class SecurityConfig {
     @Bean
     public InMemoryUserDetailsManager inMemoryUserDetailsManager(){
         UserDetails principleUser  = User.withDefaultPasswordEncoder()
-                .username("Nadeesha")
-                .password("1234")
-                .roles("ADMIN")
+                .username(username)
+                .password(password)
+                .roles(role)
                 .build();
         return new InMemoryUserDetailsManager(principleUser);
 
