@@ -1,5 +1,6 @@
 package lk.ijse.gdse.NoteCollector.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -11,8 +12,11 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
+    @Value("${secure.basic.username}")
     String username;
+    @Value("${secure.basic.password}")
     String password;
+    @Value("${secure.basic.role}")
     String role;
     @Bean
     public SecurityFilterChain SecurityFilterChain(HttpSecurity http) throws Exception {
