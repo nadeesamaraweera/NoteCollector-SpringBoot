@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public UserResponse getSelectedUser(String userId) {
         if(userDAO.existsById(userId)){
-            UserEntity userEntityByUserId = userDAO.getUserEntityByUserId(userId);
+            UserEntity userEntityByUserId = userDAO.getReferenceById(userId);
             return mapping.convertToUserDTO(userEntityByUserId);
             }else {
                 return new UserErrorResponse(0, "User not found");
